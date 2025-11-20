@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload</title>
+    <link rel="stylesheet" href="upload.css" />
+    <script type="module" src="upload.js"></script>
+  </head>
+  <body>
+    <h1>Jesus' Document upload tool</h1>
+    <div id="status-container">
+      <h2 id="status-label">Status:</h2>
+      &nbsp &nbsp
+      <p id="status">No document selected</p>
+    </div>
+    <br />
+    <input
+      type="file"
+      name="file"
+      id="fileInput"
+      onchange="handleFileSelect()"
+    />
+    <br />
+    <br />
+    <button id="upload-button" onclick="handleUpload()">upload</button>
+    <button>
+      <a href="../index.html">Back</a>
+    </button>
+  </body>
+</html>

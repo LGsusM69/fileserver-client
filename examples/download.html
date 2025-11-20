@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download</title>
+    <link rel="stylesheet" href="download.css" />
+    <script type="module" src="download.js"></script>
+  </head>
+  <body>
+    <h1>Jesus' Document Download Tool</h1>
+    <div id="status-container">
+      <h2 id="status-label">Status:</h2>
+      &nbsp &nbsp
+      <p id="status">No file selected</p>
+    </div>
+    <br />
+    filename:
+    <input
+      type="text"
+      name="file"
+      id="fileInput"
+      onchange="handleFileSelect()"
+    />
+    <br />
+    <br />
+    <button id="download-button" onclick="handleDownload()">Downlolad</button>
+    <br />
+    <button>
+      <a href="../index.html">Back</a>
+    </button>
+  </body>
+</html>
