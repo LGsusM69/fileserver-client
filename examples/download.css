@@ -11,3 +11,11 @@
 #status-container p {
     display: inline;
 }
+
+th, td {
+  border: 1px solid #ccc;
+}
+
+thead {
+  background-color: #f4f4f4;
+}

@@ -72,4 +72,13 @@ export default class FileClient {
     });
     return file;
   }
+
+  async getFileNames() {
+
+    const response = await fetch(this.baseUrl + "/files", {
+      method: "GET",
+    });
+    const obj = await response.json();
+    return obj.fileNames;
+  }
 }
